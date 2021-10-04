@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RH1" targetNamespace="http://tempuri.org/RH1.xsd" xmlns:mstns="http://tempuri.org/RH1.xsd" xmlns="http://tempuri.org/RH1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="RHConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RHConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RH.My.MySettings.GlobalReference.Default.RHConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_ControleAccesTableAdapter" GeneratorDataComponentClassName="V_ControleAccesTableAdapter" Name="V_ControleAcces" UserDataComponentName="V_ControleAccesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="RHConnectionString1 (MySettings)" DbObjectName="RH.Gestion.V_ControleAcces" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Matricule, NUM_CONT, Nom, Prenom, Date, heure, Etat, Acces FROM Gestion.V_ControleAcces</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Matricule" DataSetColumn="Matricule" />
+              <Mapping SourceColumn="NUM_CONT" DataSetColumn="NUM_CONT" />
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="Prenom" DataSetColumn="Prenom" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="heure" DataSetColumn="heure" />
+              <Mapping SourceColumn="Etat" DataSetColumn="Etat" />
+              <Mapping SourceColumn="Acces" DataSetColumn="Acces" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RH1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="RH1" msprop:Generator_UserDSName="RH1" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_ControleAcces" msprop:Generator_UserTableName="V_ControleAcces" msprop:Generator_RowDeletedName="V_ControleAccesRowDeleted" msprop:Generator_TableClassName="V_ControleAccesDataTable" msprop:Generator_RowChangedName="V_ControleAccesRowChanged" msprop:Generator_RowClassName="V_ControleAccesRow" msprop:Generator_RowChangingName="V_ControleAccesRowChanging" msprop:Generator_RowEvArgName="V_ControleAccesRowChangeEvent" msprop:Generator_RowEvHandlerName="V_ControleAccesRowChangeEventHandler" msprop:Generator_TablePropName="V_ControleAcces" msprop:Generator_TableVarName="tableV_ControleAcces" msprop:Generator_RowDeletingName="V_ControleAccesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Matricule" msprop:Generator_UserColumnName="Matricule" msprop:Generator_ColumnPropNameInRow="Matricule" msprop:Generator_ColumnVarNameInTable="columnMatricule" msprop:Generator_ColumnPropNameInTable="MatriculeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUM_CONT" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NUM_CONT" msprop:Generator_ColumnPropNameInRow="NUM_CONT" msprop:Generator_ColumnVarNameInTable="columnNUM_CONT" msprop:Generator_ColumnPropNameInTable="NUM_CONTColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom" msprop:Generator_UserColumnName="Nom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInTable="NomColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prenom" msprop:Generator_UserColumnName="Prenom" msprop:Generator_ColumnPropNameInRow="Prenom" msprop:Generator_ColumnVarNameInTable="columnPrenom" msprop:Generator_ColumnPropNameInTable="PrenomColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="heure" msprop:Generator_UserColumnName="heure" msprop:Generator_ColumnPropNameInRow="heure" msprop:Generator_ColumnVarNameInTable="columnheure" msprop:Generator_ColumnPropNameInTable="heureColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Etat" msprop:Generator_UserColumnName="Etat" msprop:Generator_ColumnPropNameInRow="Etat" msprop:Generator_ColumnVarNameInTable="columnEtat" msprop:Generator_ColumnPropNameInTable="EtatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Acces" msprop:Generator_UserColumnName="Acces" msprop:Generator_ColumnPropNameInRow="Acces" msprop:Generator_ColumnVarNameInTable="columnAcces" msprop:Generator_ColumnPropNameInTable="AccesColumn" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
